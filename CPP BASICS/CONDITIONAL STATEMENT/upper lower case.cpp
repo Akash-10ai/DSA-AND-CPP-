@@ -18,7 +18,6 @@ int main(){
 
 // acc to ascii value of character, if it is between 65 to 90 then it is upper case and if it is between 97 to 122 then it is lower case.
 
-
 if (ch>= 65 && ch<= 90) {
     cout<<"character is upper case\n";
 }else if(ch>= 97 && ch<= 122){
