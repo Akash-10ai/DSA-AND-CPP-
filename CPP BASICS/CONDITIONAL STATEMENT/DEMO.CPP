@@ -1,4 +1,4 @@
-// CONDITIONAL STATEMENT 
+// CONDITIONAL STATEMENT EXECUTATION
 
 // 1. IF - else  STATEMENT 
 
@@ -6,7 +6,7 @@
 using namespace std;
 
 int main(){
-    int n = 45;
+    int n = 54;
 
     if(n>= 0) {
         cout<< "n is positive\n";
