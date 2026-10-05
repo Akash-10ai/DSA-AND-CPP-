@@ -9,10 +9,17 @@ double sum(double a, double b) {
 }
 
 // min of 2 number
-int minOfTwo(int a, int b) {
+int minOfTwo(int a, int b) {    // parameters
     if(a < b) {
         return a;
     } else {
         return b;
     }
+}
+
+int main() {
+    cout << sum(10,5) << endl;  // argument
+    cout << minOfTwo(10,5) << endl; // argument 
+
+    return 0;
 }
