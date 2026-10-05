@@ -5,7 +5,7 @@ int main(){
 
     int n = 4;
 
-    // top part
+    // top part of hollow diamond 
 
     for(i=0; i<n; i++){
         //spaces
@@ -16,7 +16,7 @@ int main(){
         cout<< "*";
 
         if(i ! =0) {
-            //spaces
+            //spaces 
             for(j=0; j<2*i-1; j++){
                 cout << " ";
             }
