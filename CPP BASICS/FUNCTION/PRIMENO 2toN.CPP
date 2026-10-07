@@ -1,3 +1,5 @@
+// to print prime number 2 to n times 
+
 
 #include<iostream>
 using namespace std;
