@@ -4,12 +4,14 @@
 #include<iostream>
 using namespace std;
 
+ // Numbers less than or equal to 1 (like 0 and 1) are not prime
+
 bool isPrime(int num) {
     if (num <=1) {
         return false;
     }
 
-    for(int i=2; i<=num; i++) {
+    for(int i=2; i<=num; i++) {  
         if (num%i == 0){
             return false;
         }
