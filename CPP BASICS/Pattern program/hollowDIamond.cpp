@@ -1,23 +1,23 @@
 // pattern program to print hollow diamond pattern
 #include <iostream>
-usinf namespace std;
+using namespace std;
 int main(){
 
     int n = 4;
 
-    // top part of hollow diamond 
+    // top part
 
-    for(i=0; i<n; i++){
+    for(int i=0; i<n; i++){
         //spaces
-        for(j=0; j<n-i-1; j++){
+        for(int j=0; j<n-i-1; j++){
             cout<< " "; 
         }
 
         cout<< "*";
 
-        if(i ! =0) {
-            //spaces 
-            for(j=0; j<2*i-1; j++){
+        if(i !=0) {
+            //spaces
+            for(int j=0; j<2*i-1; j++){
                 cout << " ";
             }
             
@@ -25,6 +25,28 @@ int main(){
 
         }
         cout << endl;
+    }
+
+    // bottom half
+
+    for (int i = n - 2; i >= 0; i--){
+        // outer spaces
+        for (int j = 0; j < n - i - i; j++){
+            cout<< " ";
+        }
+
+        cout << "*";
+
+        if (i != 0){
+          // inner spaces between stars
+
+          for(int j = 0; j < 2 * i - 1; j++){
+            cout<<" ";
+          }
+
+          cout<<"*";
+        }
+        cout<< endl;
     }
 
     return 0;
