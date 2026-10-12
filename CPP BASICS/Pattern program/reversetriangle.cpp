@@ -1,18 +1,22 @@
-// to print number triangle pattern
-
-#include<iostream>
+// cpp programt to print reverse triangle pattern
+#include <iostream>
 using namespace std;
 
-int main(){
-    int n = 4;
+int main() {
+    int rows;
+    
+    cout << "Enter the number of rows: ";
+    cin >> rows;
 
-    for(int i = 0; i<n; i++){
-        for(int j = 0; j<i+1; j++){
-            cout<< (i+1);
+    // Outer loop for the number of rows (counting down)
+    for (int i = rows; i >= 1; i--) {
+        // Inner loop to print the stars for each row
+        for (int j = 1; j <= i; j++) {
+            cout << "  ";
         }
+        // Move to the next line after printing all stars in the row
         cout << endl;
     }
 
     return 0;
 }
-
