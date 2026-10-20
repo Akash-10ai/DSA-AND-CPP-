@@ -1,3 +1,4 @@
+// homework problem to perform or operator
 #include<iostream>
 using namespace std;
 
